@@ -12,41 +12,41 @@ O objetivo deste projeto é identificar as melhores empresas para investir na bo
 
 Os dados foram obtidos utilizando a biblioteca yfinance, que permite acessar informações financeiras de empresas listadas em bolsas de valores. Os principais passos para a coleta de dados foram:
 
-### Extração dos tickers das empresas listadas na B3 (bolsa brasileira) a partir de um arquivo CSV.
+- Extração dos tickers das empresas listadas na B3 (bolsa brasileira) a partir de um arquivo CSV.
 
-### Coleta de dados históricos de preços e de indicadores financeiros, como balanços patrimoniais, demonstrativos de resultados e fluxos de caixa.
+- Coleta de dados históricos de preços e de indicadores financeiros, como balanços patrimoniais, demonstrativos de resultados e fluxos de caixa.
 
-### Organização dos dados em um DataFrame para análise posterior.
+- Organização dos dados em um DataFrame para análise posterior.
 
 ## Limpeza e Processamento de Dados
 
 Os dados coletados passaram por uma etapa de limpeza para:
 
-### Remover entradas com valores ausentes.
+- Remover entradas com valores ausentes.
 
-### Escalar os dados para normalizar as variações entre diferentes métricas financeiras, utilizando o StandardScaler da biblioteca scikit-learn.
+- Escalar os dados para normalizar as variações entre diferentes métricas financeiras, utilizando o StandardScaler da biblioteca scikit-learn.
 
 ## Clusterização
 
 Foi utilizado o algoritmo K-Means para agrupar as empresas. O processo incluiu:
 
-### Determinação do número ideal de clusters:
+1. Determinação do número ideal de clusters:
 
-Aplicação do método do cotovelo, que analisa a soma dos erros ao quadrado (inércia) para diferentes números de clusters.
+- Aplicação do método do cotovelo, que analisa a soma dos erros ao quadrado (inércia) para diferentes números de clusters.
 
-Uso do Silhouette Score para avaliar a qualidade do agrupamento.
+- Uso do Silhouette Score para avaliar a qualidade do agrupamento.
 
-### Execução do K-Means:
+2. Execução do K-Means:
 
-Definição do número ideal de clusters com base nas análises anteriores.
+- Definição do número ideal de clusters com base nas análises anteriores.
 
-Atribuição de cada empresa a um cluster.
+- Atribuição de cada empresa a um cluster.
 
 ## Visualização e Análise
 
-As médias dos indicadores financeiros foram calculadas para cada cluster, permitindo identificar as principais características de cada grupo.
+- As médias dos indicadores financeiros foram calculadas para cada cluster, permitindo identificar as principais características de cada grupo.
 
-Gráficos de mapa de calor foram gerados para visualizar as diferenças entre os clusters.
+- Gráficos de mapa de calor foram gerados para visualizar as diferenças entre os clusters.
 
 ## Resultados
 

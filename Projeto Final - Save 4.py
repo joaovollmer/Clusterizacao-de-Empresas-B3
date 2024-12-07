@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime
 
 # Carregar o CSV com os tickers da B3
-df_empresas = pd.read_csv("C:/Users/Usuario/Documents/Material de Estudo/Python aplicado à Finanças/acoes-listadas-b3.csv")
+df_empresas = pd.read_csv("acoes-listadas-b3.csv")
 
 # Extrair a coluna "Ticker" e adicionar o sufixo ".SA"
 tickers = df_empresas['Ticker'] + ".SA"

@@ -14,7 +14,7 @@ Os dados foram obtidos utilizando a biblioteca yfinance, que permite acessar inf
 
 ### Extração dos tickers das empresas listadas na B3 (bolsa brasileira) a partir de um arquivo CSV.
 
-###Coleta de dados históricos de preços e de indicadores financeiros, como balanços patrimoniais, demonstrativos de resultados e fluxos de caixa.
+### Coleta de dados históricos de preços e de indicadores financeiros, como balanços patrimoniais, demonstrativos de resultados e fluxos de caixa.
 
 ### Organização dos dados em um DataFrame para análise posterior.
 
